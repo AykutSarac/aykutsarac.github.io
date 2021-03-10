@@ -27,7 +27,7 @@ const Intro = styled.div`
 
 
 const IntroTitle = styled.h1`
-    font-size: clamp(40px, 5vw, 60px);
+    font-size: clamp(30px, 5vw, 60px);
 
     @media screen and (min-width: 1180px) {
         animation: 1s ${_slideInLeft};
@@ -60,7 +60,7 @@ const Header = () => {
         <Wrap>
             <Intro>
                 <TextSide>
-                    <IntroTitle>Aykut Saraç</IntroTitle>
+                    <IntroTitle>I am Aykut Saraç.</IntroTitle>
                     <IntroText>Front-End Developer &amp; Software Engineering Student. I'm passionate about learning anything new and following the trends of the era. Contributing to Open Source at GitHub and observing the technologies of future, working in the field of JavaScript and its frameworks.</IntroText>
                 </TextSide>
                 <Contact />
