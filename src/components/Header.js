@@ -61,7 +61,7 @@ const Header = () => {
             <Intro>
                 <TextSide>
                     <IntroTitle>Aykut Saraç</IntroTitle>
-                    <IntroText>Front-End Developer &amp; Software Engineering Student. I'm passionate about learning anything new and following the trends of the era. Contribuing to Open Source at GitHub and observing the technologies of future, working in the field of JavaScript and its frameworks.</IntroText>
+                    <IntroText>Front-End Developer &amp; Software Engineering Student. I'm passionate about learning anything new and following the trends of the era. Contributing to Open Source at GitHub and observing the technologies of future, working in the field of JavaScript and its frameworks.</IntroText>
                 </TextSide>
                 <Contact />
             </Intro>
