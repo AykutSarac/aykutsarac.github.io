@@ -62,8 +62,8 @@ const Contact = () => {
             <IconList>
                 
                 <Icon><a rel="noreferrer" href={socialURL.github} target="_blank"><FaGithubSquare size={50} /></a></Icon>
-                <Icon passive="true"><a href={socialURL.linkedin} ><FaLinkedin size={50} /></a></Icon>
-                <Icon passive="true"><a href={socialURL.instagram} ><FaInstagramSquare size={50} /></a></Icon>
+                <Icon passive="true"><a rel="noreferrer" href={socialURL.linkedin} target="_blank"><FaLinkedin size={50} /></a></Icon>
+                <Icon passive="true"><a rel="noreferrer" href={socialURL.instagram} target="_blank" ><FaInstagramSquare size={50} /></a></Icon>
             </IconList>
         </ContactView>
     )
