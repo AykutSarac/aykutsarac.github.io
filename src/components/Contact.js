@@ -51,10 +51,16 @@ const Contact = () => {
         instagram: null
     }
 
+    /**
+     * Put `passive="true"` inside Icon 
+     * component if you want to make it passive
+     */
+
     return (
         <ContactView>
             <ContactTitle>&#8249;/SOCIAL &#8250;</ContactTitle>
             <IconList>
+                
                 <Icon><a rel="noreferrer" href={socialURL.github} target="_blank"><FaGithubSquare size={50} /></a></Icon>
                 <Icon passive="true"><a href={socialURL.linkedin} ><FaLinkedin size={50} /></a></Icon>
                 <Icon passive="true"><a href={socialURL.instagram} ><FaInstagramSquare size={50} /></a></Icon>
