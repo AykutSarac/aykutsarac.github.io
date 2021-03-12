@@ -59,7 +59,7 @@ const Header = () => {
 
     let personalInfo = {
         title: "I am Aykut Saraç.",
-        description: "Front-End Developer &amp; Software Engineering Student. I'm passionate about learning anything new and following the trends of the era. Contributing to Open Source at GitHub and observing the technologies of future, working in the field of JavaScript and its frameworks."
+        description: "Front-End Developer & Software Engineering Student. I'm passionate about learning anything new and following the trends of the era. Contributing to Open Source at GitHub and observing the technologies of future, working in the field of JavaScript and its frameworks."
     }
 
     return (

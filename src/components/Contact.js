@@ -32,36 +32,32 @@ const IconList = styled.ul`
 const Icon = styled.li`
     display: inline;
     margin: .5em;
-`;
 
-const GitHub = styled(FaGithubSquare)`
-    color: white;
-    transition: 0.3s;
-
-    &:hover {
-        color: #7ff5ac;
+    & svg {
+        transition: 0.3s;
+        color: ${({passive}) => (passive ? "#cccccc" : "white")};
+        cursor: ${({passive}) => (passive ? "default" : "pointer")};
     }
-`;
 
-const LinkedIn = styled(FaLinkedin)`
-    color: #cccccc;
-;
-    transition: 0.3s;
-`;
-
-const Instagram = styled(FaInstagramSquare)`
-    color: #cccccc;
-    transition: 0.3s;
+    ${({passive}) => (!passive && '&:hover svg { color: #7ff5ac; }')}
 `;
 
 const Contact = () => {
+
+
+    const socialURL = {
+        github: "https://github.com/AykutSarac",
+        linkedin: null,
+        instagram: null
+    }
+
     return (
         <ContactView>
             <ContactTitle>&#8249;/SOCIAL &#8250;</ContactTitle>
             <IconList>
-                <Icon><a rel="noreferrer" href="https://github.com/AykutSarac" target="_blank"><GitHub size={50} /></a></Icon>
-                <Icon><LinkedIn size={50} /></Icon>
-                <Icon><Instagram size={50} /></Icon>
+                <Icon><a rel="noreferrer" href={socialURL.github} target="_blank"><FaGithubSquare size={50} /></a></Icon>
+                <Icon passive="true"><a href={socialURL.linkedin} ><FaLinkedin size={50} /></a></Icon>
+                <Icon passive="true"><a href={socialURL.instagram} ><FaInstagramSquare size={50} /></a></Icon>
             </IconList>
         </ContactView>
     )
