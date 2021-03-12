@@ -1,6 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 import { slideInLeft } from 'react-animations'
-import Contact from './Contact';
+import React, { Suspense } from 'react';
+const Contact = React.lazy(() => import('./Contact'));
 
 const _slideInLeft = keyframes`${slideInLeft}`;
 
@@ -63,7 +64,8 @@ const Header = () => {
     }
 
     return (
-        <Wrap>
+        <Suspense fallback="<></>">
+            <Wrap>
             <Intro>
                 <TextSide>
                     <IntroTitle>{personalInfo.title}</IntroTitle>
@@ -72,6 +74,7 @@ const Header = () => {
                 <Contact />
             </Intro>
         </Wrap>
+        </Suspense>
     )
 }
 
