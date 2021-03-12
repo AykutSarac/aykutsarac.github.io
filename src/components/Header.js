@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components'
 import { slideInLeft } from 'react-animations'
 import Contact from './Contact';
 
-const _slideInLeft= keyframes`${slideInLeft}`;
+const _slideInLeft = keyframes`${slideInLeft}`;
 
 const Wrap = styled.div`
   background-image: linear-gradient(135deg, #870091, #38009A, #87D6B4);
@@ -56,12 +56,18 @@ const TextSide = styled.div`
 `;
 
 const Header = () => {
+
+    let personalInfo = {
+        title: "I am Aykut Saraç.",
+        description: "Front-End Developer &amp; Software Engineering Student. I'm passionate about learning anything new and following the trends of the era. Contributing to Open Source at GitHub and observing the technologies of future, working in the field of JavaScript and its frameworks."
+    }
+
     return (
         <Wrap>
             <Intro>
                 <TextSide>
-                    <IntroTitle>I am Aykut Saraç.</IntroTitle>
-                    <IntroText>Front-End Developer &amp; Software Engineering Student. I'm passionate about learning anything new and following the trends of the era. Contributing to Open Source at GitHub and observing the technologies of future, working in the field of JavaScript and its frameworks.</IntroText>
+                    <IntroTitle>{personalInfo.title}</IntroTitle>
+                    <IntroText>{personalInfo.description}</IntroText>
                 </TextSide>
                 <Contact />
             </Intro>
