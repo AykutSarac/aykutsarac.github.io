@@ -1,6 +1,8 @@
+import styles from './navbar.module.css'
+
 const Navbar = () => {
     return (
-        <nav>
+        <nav id={styles.nav}>
             <h2>$ Welcome to my page, I'm <span style={{ 'color':  '#c300ff' }}>Aykut</span>.</h2>
             <ul>
                 <li><a href="/">Home</a></li>
