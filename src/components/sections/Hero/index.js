@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react'
-import bolt from '../../../assets/img/bolt.png'
 
 import styles from './hero.module.css'
 
@@ -37,7 +36,7 @@ const Hero = () => {
                 <p>If you still haven't noticed, I'm working in the field of web development developing both backend and frontend applications using various <i>fun</i> tools.</p>
             </div>
             <div className={styles.img}>
-                <img src={bolt} ref={elem} id={styles.bolt} alt="lightning bolt" />
+                <img src="/bolt.png" ref={elem} id={styles.bolt} alt="lightning bolt" />
             </div>
         </section>
     )
