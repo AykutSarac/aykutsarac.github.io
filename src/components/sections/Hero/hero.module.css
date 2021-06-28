@@ -1,0 +1,46 @@
+.img {
+  position: relative;
+  width: 40%;
+}
+
+.info {
+  font-size: 24px;
+  width: 100%;
+  padding: 3em;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+#bolt {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: light 3s infinite;
+}
+
+@keyframes light {
+  0%, 100% {
+    filter: drop-shadow(0 0 2.2rem crimson);
+    transform: translateY(4%);
+  }
+  50% {
+    filter: drop-shadow(0 0 0.5rem crimson);
+    transform: translateY(0%);
+  }
+}
+
+@media screen and (max-width: 968px) {
+  #hero {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .info {
+    padding: 0;
+  }
+
+  .img {
+    margin: 3em auto;
+    width: 60%;
+  }
+}
