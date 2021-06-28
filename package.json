@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "author": "AykutSarac",
+  "license": "MIT",
   "homepage": "https://aykutsarac.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
