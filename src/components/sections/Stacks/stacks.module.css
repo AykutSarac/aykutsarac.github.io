@@ -1,9 +1,10 @@
 .stackList {
   display: flex;
   justify-content: center;
-  margin: 1em 0;
+  margin: 2em 0;
   width: 100%;
   gap: 2em;
+  min-height: 10rem;
 }
 
 .icon {
