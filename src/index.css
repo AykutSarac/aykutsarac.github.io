@@ -54,6 +54,17 @@ h2 {
   user-select: none;
 }
 
+body::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--color-gray1);
+}
+
+
 @keyframes wave {
   from {
     transform: rotate(0deg);
