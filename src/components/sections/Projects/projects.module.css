@@ -1,5 +1,6 @@
 .projectList {
-  margin: 2em 5em;
+  margin: 2em auto;
+  width: 75%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, minmax(125px, auto));
@@ -67,7 +68,8 @@
 
 @media screen and (max-width: 968px) {
   .projectList {
-    margin: 2em;
+    width: 70%;
+    margin: 2em auto;
     grid-template-columns: repeat(1, 1fr);
   }
 }
