@@ -13,11 +13,12 @@
   --color-gray1: #2c2e3a;
   --color-gray2: #494c58;
   --color-gray3: #2a2b30;
+  --color-bg: #181a22;
 }
 
 body {
   font-family: var(--font-primary);
-  background-color: #181a22;
+  background-color: var(--color-bg);
   color: #fff;
   min-height: 200vh;
   width: 100%;

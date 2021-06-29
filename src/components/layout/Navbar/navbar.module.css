@@ -8,13 +8,6 @@
   align-items: center;
 }
 
-#nav::after {
-  color: var(--color-secondary);
-  font-size: clamp(1.2rem, 8vw, 1.6rem);
-  font-weight: 500;
-  user-select: none;
-}
-
 #nav li a {
   font-weight: 400;
   color: #b6b6b6;
@@ -40,26 +33,66 @@ ul {
   gap: 1em;
 }
 
+.menu, .closeMenu {
+  display: none;
+}
+
 @media screen and (max-width: 968px) {
   #nav {
     margin: 1em;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+  }
+
+  .menu {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+
+  #nav::before {
+    content: "$ AYKUT";
+    display: inline-block;
+    color: var(--color-secondary);
+    font-size: clamp(1.2rem, 8vw, 1.6rem);
+    font-weight: 500;
+    user-select: none;
   }
 
   #nav h2 {
     display: none;
   }
 
-  #nav::after {
-    content: "$ AYKUT";
-    display: inline-block;
-    position: absolute;
-  }
-
-  #nav {
-    padding: 1.5em;
-  }
-
-  #nav ul {
+  #nav ul.hide {
     display: none;
+  }
+
+  #nav ul.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    font-size: 1.4rem;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background: var(--color-bg);
+  }
+
+  #nav .closeMenu {
+    display: block;
+    filter: invert();
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 50%);
+    cursor: pointer;
   }
 }
