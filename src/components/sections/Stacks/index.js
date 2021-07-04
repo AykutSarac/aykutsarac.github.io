@@ -6,7 +6,6 @@ import styles from './stacks.module.css'
 
 const Stack = () => {
 
-
     return (
         <section id="stack">
             <h1>$ I Use,</h1>
