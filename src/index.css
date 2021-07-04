@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 :root {
@@ -16,12 +16,16 @@
   --color-bg: #181a22;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-primary);
   background-color: var(--color-bg);
   color: #fff;
-  min-height: 200vh;
   width: 100%;
+  height: 100%;
   font-weight: 300;
   overflow-x: hidden;
 }
@@ -63,7 +67,6 @@ body::-webkit-scrollbar {
   width: 8px;
   background-color: var(--color-gray1);
 }
-
 
 @keyframes wave {
   from {
