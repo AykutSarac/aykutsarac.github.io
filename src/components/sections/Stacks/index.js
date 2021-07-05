@@ -1,3 +1,4 @@
+import React from 'react'
 import { FaVuejs, FaReact } from 'react-icons/fa'
 import { DiJavascript1, DiMongodb, DiHtml5, DiCss3, DiSass, DiNodejsSmall } from 'react-icons/di'
 import { SiIbm } from 'react-icons/si'
@@ -8,7 +9,7 @@ const Stack = () => {
 
     return (
         <section id="stack">
-            <h1>$ I Use,</h1>
+            <h2>$ I Use,</h2>
             <div className={styles.stackList}>
                 <FaReact className={styles.icon} size={80} color="cyan" />
                 <FaVuejs className={styles.icon} size={80} style={{ 'color': '#42b883' }} />

@@ -1,3 +1,4 @@
+import React from 'react'
 import { useEffect, useState } from "react"
 import axios from 'axios'
 import ProjectItem from "./ProjectItem";
@@ -57,7 +58,7 @@ const Projects = () => {
 
     return (
         <section id="projects">
-            <h1>$ Projects</h1>
+            <h2>$ Projects</h2>
             <div className={styles.projectList}>
                 {repos && repos.length > 0 && repos.slice(0, slicer).map(project => (
                     <ProjectItem key={project.id} project={project} />

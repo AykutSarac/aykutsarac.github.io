@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from './navbar.module.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { GrFormClose } from 'react-icons/gr'
@@ -11,7 +12,7 @@ const Navbar = () => {
 
     return (
         <nav id={styles.nav}>
-            <h2>$ Welcome to my page, I'm <span style={{ 'color': '#c300ff' }}>Aykut</span>.</h2>
+            <h1>$ Welcome to my page, I'm <span style={{ 'color': '#c300ff' }}>Aykut</span>.</h1>
             <ul className={`${showMenu ? styles.hide : styles.show}`} onClick={toggleMenu}>
                 <GrFormClose size={45} className={styles.closeMenu} />
                 <li><a href="/">Home</a></li>

@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from './projects.module.css'
 
 const ProjectItem = ({ project }) => {

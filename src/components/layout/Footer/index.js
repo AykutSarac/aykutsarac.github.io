@@ -1,3 +1,4 @@
+import React from 'react'
 import { FaGithub } from 'react-icons/fa'
 import styles from './footer.module.css'
 
