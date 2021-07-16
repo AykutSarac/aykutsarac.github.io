@@ -12,7 +12,9 @@ const Navbar = () => {
 
     return (
         <nav id={styles.nav}>
-            <h1>$ Welcome to my page, I'm <span style={{ 'color': '#c300ff' }}>Aykut</span>.</h1>
+            <h1>
+                <a href="/">$ Welcome to my page, I'm <span style={{ 'color': '#c300ff' }}>Aykut</span>.</a>
+            </h1>
             <ul className={`${showMenu ? styles.hide : styles.show}`} onClick={toggleMenu}>
                 <GrFormClose size={45} className={styles.closeMenu} />
                 <li><a href="/">Home</a></li>

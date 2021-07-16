@@ -8,6 +8,11 @@
   align-items: center;
 }
 
+a {
+  color: unset;
+  text-decoration: none;
+}
+
 #nav li a {
   font-weight: 400;
   color: #b6b6b6;
