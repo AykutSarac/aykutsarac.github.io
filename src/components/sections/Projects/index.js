@@ -20,7 +20,7 @@ const Projects = () => {
                 const res = await axios.get("https://api.github.com/users/AykutSarac/repos").then(res => res.data);
 
                 const tempData = [...res];
-                tempData.push({ id: 1, stargazers_count: 999, name: 'Growtopian Bot', html_url: 'https://growtopian.xyz', description: 'Growtopian is a Discord bot with various features' })
+                tempData.push({ id: 1, stargazers_count: 999, name: 'Growtopian Bot', html_url: 'https://growtopian.xyz', description: '🎮 Growtopian is a Discord Bot in over 2000 servers.' })
 
                 const orderedArr = tempData.sort((a, b) => {
                     if (a.stargazers_count > b.stargazers_count) {
@@ -41,19 +41,9 @@ const Projects = () => {
             } catch (error) {
                 console.error('An error occured while fetching data...');
             }
-
         }
 
-        if (localStorage.getItem('repos')) {
-            const storeRepos = JSON.parse(localStorage.getItem('repos'));
-            setRepos(storeRepos);
-        } else {
-            fetchData().then(repos => {
-                localStorage.setItem('repos', JSON.stringify(repos));
-                setRepos(repos);
-            });
-        }
-
+        fetchData().then(setRepos);
     }, []);
 
     return (
