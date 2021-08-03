@@ -5,9 +5,9 @@ const Hero = () => {
     return (
         <section id="hero">
             <div className={styles.info}>
-                <p>I'm a self taught developer and Software Engineering student from Turkey.</p>
+                <p>I'm a passionate software developer who is a fan of continous learning.</p>
                 <br/>
-                <p>If you still haven't noticed, I'm working in the field of web development developing both backend and frontend applications using various <i>fun</i> tools.</p>
+                <p>I have experience in developing both backend and frontend systems, I love contributing to Open Source, following the trends of evolving technology and science. </p>
             </div>
             <div className={styles.img}>
                 <img src="/bolt.png" id={styles.bolt} alt="lightning bolt" />
