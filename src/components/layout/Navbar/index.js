@@ -19,7 +19,7 @@ const Navbar = () => {
                 <GrFormClose size={45} className={styles.closeMenu} />
                 <li><a href="/">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#stack">Stack</a></li>
+                {/* <li><a href="#stack">Stack</a></li> */}
                 <li><a href="https://github.com/AykutSarac">GitHub</a></li>
             </ul>
             <GiHamburgerMenu size={30} className={styles.menu} onClick={toggleMenu} />

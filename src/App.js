@@ -19,7 +19,7 @@ function App() {
       <Hero />
       <Suspense fallback={<div className="sheesh">Sheeesh...</div>}>
         <Projects />
-        <Stack />
+        {/* <Stack /> */}
         <Footer />
         <div className="wave"></div>
       </Suspense>
