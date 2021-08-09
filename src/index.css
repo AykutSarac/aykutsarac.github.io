@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 :root {
-  --font-primary: "Ubuntu", sans-serif;
+  --font-primary: 'Ubuntu', sans-serif;
   --color-primary: #e2e2e2;
   --color-secondary: rgb(32, 255, 144);
   --color-gray1: #2c2e3a;

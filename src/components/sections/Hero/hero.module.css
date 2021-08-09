@@ -19,7 +19,8 @@
 }
 
 @keyframes light {
-  0%, 100% {
+  0%,
+  100% {
     filter: drop-shadow(0 0 2.2rem crimson);
     transform: translateY(4%);
   }

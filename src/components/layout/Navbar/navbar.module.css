@@ -38,7 +38,8 @@ ul {
   gap: 1em;
 }
 
-.menu, .closeMenu {
+.menu,
+.closeMenu {
   display: none;
 }
 
@@ -59,7 +60,7 @@ ul {
   }
 
   #nav::before {
-    content: "$ AYKUT";
+    content: '$ AYKUT';
     display: inline-block;
     color: var(--color-secondary);
     font-size: clamp(1.2rem, 8vw, 1.6rem);
@@ -103,7 +104,11 @@ ul {
   }
 
   @keyframes circleOpen {
-    from { clip-path: circle(0.6% at 100% 0); }  
-    to { clip-path: circle(141.6% at 100% 0); }
+    from {
+      clip-path: circle(0.6% at 100% 0);
+    }
+    to {
+      clip-path: circle(141.6% at 100% 0);
+    }
   }
 }

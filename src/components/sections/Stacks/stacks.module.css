@@ -55,9 +55,9 @@
 
 @media screen and (max-width: 968px) {
   .stackList {
-      margin: 2em 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(3rem, 5rem));
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(3rem, 5rem));
   }
 
   .icon {

@@ -37,11 +37,7 @@
 .project:hover {
   transform: scale(1.05);
   transition: 0.2s;
-  background: radial-gradient(
-    circle,
-    rgba(64, 63, 83) 0%,
-    rgba(57, 76, 79) 100%
-  );
+  background: radial-gradient(circle, rgba(64, 63, 83) 0%, rgba(57, 76, 79) 100%);
 }
 
 .seeMore {
@@ -59,11 +55,7 @@
 }
 
 .seeMore:hover {
-  background: radial-gradient(
-    circle,
-    rgba(64, 63, 83) 0%,
-    rgba(57, 76, 79) 100%
-  );
+  background: radial-gradient(circle, rgba(64, 63, 83) 0%, rgba(57, 76, 79) 100%);
 }
 
 @media screen and (max-width: 968px) {
