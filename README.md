@@ -8,10 +8,6 @@ Check out on live: <https://aykutsarac.github.io>
 
 ![preview](public/preview.png)
 
-## Lighthouse Scores
-
-![scores](https://i.ibb.co/64NLjMr/lighthouse.png)
-
 ## Author
 
 - Aykut Sarac
