@@ -23,6 +23,34 @@ const Home: NextPage<Props> = ({ repos, blogPosts }) => {
     <div>
       <Head>
         <title>Aykut Saraç</title>
+        <meta
+          name="description"
+          content="I'm a passionate software developer who derives pleasure from solving problems, a self-learner with the ability to adapt new environments quickly and pleased in gaining new experiences while developing robust code for next-generation applications."
+        />
+        <meta name="image" content="https://aykutsarac.github.io/favicon.ico" />
+
+        <meta itemProp="name" content="Aykut Saraç" />
+        <meta
+          itemProp="description"
+          content="I'm a passionate software developer who derives pleasure from solving problems, a self-learner with the ability to adapt new environments quickly and pleased in gaining new experiences while developing robust code for next-generation applications."
+        />
+        <meta
+          itemProp="image"
+          content="https://aykutsarac.github.io/favicon.ico"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Aykut Saraç" />
+        <meta
+          name="twitter:description"
+          content="I'm a passionate software developer who derives pleasure from solving problems, a self-learner with the ability to adapt new environments quickly and pleased in gaining new experiences while developing robust code for next-generation applications."
+        />
+
+        <meta name="og:title" content="Aykut Saraç" />
+        <meta
+          name="og:description"
+          content="I'm a passionate software developer who derives pleasure from solving problems, a self-learner with the ability to adapt new environments quickly and pleased in gaining new experiences while developing robust code for next-generation applications."
+        />
+        <meta name="og:type" content="website"></meta>
       </Head>
       <StyledContainer>
         <Header />
@@ -51,7 +79,7 @@ export const getStaticProps: GetStaticProps = async () => {
     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@aykutsarac"
   );
   const res = await fetch("https://api.github.com/users/aykutsarac/repos");
-  
+
   const repos = await res.json();
   const blogPosts = await medium.json();
 
