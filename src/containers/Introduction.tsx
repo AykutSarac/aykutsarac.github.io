@@ -4,10 +4,16 @@ import styled from "styled-components";
 
 const StyledContainer = styled(Container)`
   text-align: center;
-  margin-top: 80px;
+  margin-top: 50px;
   opacity: 1;
   transition: opacity 1s;
   padding: 32px;
+
+  @media only screen and (min-width: 768px) {
+    grid-area: c;
+    width: 75%;
+    margin: 0 auto;
+  }
 `;
 
 const Introduction: React.FC = () => {

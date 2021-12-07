@@ -10,14 +10,28 @@ interface ProjectsProps {
 }
 
 const StyledContainer = styled(Container)`
-  margin: 80px 0;
+  margin: 80px 0 20px;
   opacity: 1;
   transition: opacity 1s;
-  background: ${({ theme }) => theme.transparent};
+  padding: 0 32px 64px;
+
+  @media only screen and (min-width: 768px) {
+    width: 75%;
+    margin: 80px auto 20px;
+  }
+`;
+
+const StyledCardsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 0 32px 64px;
+  margin: 32px 0;
+
+  @media only screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
 `;
 
 const StyledHeading = styled.h2``;
@@ -30,32 +44,17 @@ const Growtopian: Repository = {
   name: "Growtopian",
 };
 
-const filteredRepos = [345075300];
-
 const Projects: React.FC<ProjectsProps> = ({ repos }) => {
-  const sortByStar = (a: Repository, b: Repository) => {
-    if (!a.stargazers_count || !b.stargazers_count) return 0;
-
-    if (a.stargazers_count > b.stargazers_count) return -1;
-    return 1;
-  };
-
-  const filterRepos = (repo: Repository) => {
-    if (!filteredRepos.includes(repo.id)) return repo;
-  };
-
   return (
     <StyledContainer>
       <StyledHeading>Projects</StyledHeading>
-      <LinkCard repo={Growtopian} />
-      {repos
-        .sort(sortByStar)
-        .filter(filterRepos)
-        .slice(0, 4)
-        .map((data) => (
+      <StyledCardsWrapper>
+        <LinkCard repo={Growtopian} />
+        {repos.map((data) => (
           <LinkCard repo={data} key={data.id} />
         ))}
-      <Button href="https://github.com/AykutSarac">View More</Button>
+      </StyledCardsWrapper>
+      <Button href="https://github.com/AykutSarac">View More at GitHub</Button>
     </StyledContainer>
   );
 };
