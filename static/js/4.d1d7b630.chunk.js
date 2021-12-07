@@ -1,2 +1,0 @@
-(this["webpackJsonpaykutsarac.github.io"]=this["webpackJsonpaykutsarac.github.io"]||[]).push([[4],{66:function(t,e,a){t.exports={footer:"footer_footer__3Ra0K"}},71:function(t,e,a){"use strict";a.r(e);a(1);var i=a(67),s=a(66),o=a.n(s),c=a(2);e.default=function(){return Object(c.jsx)("footer",{className:o.a.footer,children:Object(c.jsxs)("a",{href:"http://github.com/AykutSarac/aykutsarac.github.io",children:[Object(c.jsx)(i.a,{size:18,style:{verticalAlign:"middle"}})," Check this website @ GitHub"]})})}}}]);
-//# sourceMappingURL=4.d1d7b630.chunk.js.map

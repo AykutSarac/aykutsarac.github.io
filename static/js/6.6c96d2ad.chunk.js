@@ -1,2 +1,0 @@
-(this["webpackJsonpaykutsarac.github.io"]=this["webpackJsonpaykutsarac.github.io"]||[]).push([[6],{68:function(e,a,r){"use strict";r.r(a);r(1);var c=r(42),s=r.n(c),t=r(2);a.default=function(e){var a=e.project;return Object(t.jsx)("a",{href:a.url,target:"_blank",rel:"noreferrer",className:s.a.project,children:Object(t.jsxs)("div",{className:s.a.projectInfo,children:[Object(t.jsx)("h3",{children:a.name}),Object(t.jsx)("div",{className:s.a.description,children:a.desc})]})})}}}]);
-//# sourceMappingURL=6.6c96d2ad.chunk.js.map
