@@ -1,11 +1,13 @@
 {
   "name": "aykutsarac.github.io",
+  "homepage": "https://aykutsarac.github.io",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "axios": "^0.24.0",
@@ -14,6 +16,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
+    "sharp": "^0.29.3",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
@@ -23,6 +26,7 @@
     "babel-plugin-styled-components": "^2.0.2",
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.4",
+    "gh-pages": "^3.2.3",
     "typescript": "4.5.2"
   }
 }
