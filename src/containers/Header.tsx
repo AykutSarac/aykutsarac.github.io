@@ -1,9 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import Image from "next/image";
-import avatar from "../../public/avatar.png";
 import Introduction from "./Introduction";
-import ContactItems from "./ContactItems";
 import Contact from "./Contact";
 
 const fadeIn = keyframes`
@@ -80,8 +77,11 @@ const StyledImageWrapper = styled.div`
   }
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled.img`
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
+  object-fit: cover;
 `;
 
 const StyledProfileSection = styled.div`
@@ -104,17 +104,6 @@ const StyledContact = styled(Contact)`
   overflow: visible;
   background: none;
 
-  &::before {
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 60% 50%, 50% 100%, 50% 100%, 40% 50%, 0 50%);
-    background: ${({ theme }) => theme.body};
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    top: 0;
-    transform: translateY(-30%);
-    content: "";
-  }
-
   & > div {
     justify-content: center;
   }
@@ -128,7 +117,7 @@ const Header: React.FC = () => {
   return (
     <StyledHeader>
       <StyledImageWrapper>
-        <StyledImage src={avatar} alt="aykut" layout="fill" objectFit="cover" />
+        <StyledImage src="/avatar.png" alt="aykut" />
       </StyledImageWrapper>
       <StyledProfileSection>
         <StyledHeading>Hi, I&apos;m Aykut</StyledHeading>
