@@ -12,7 +12,7 @@ export const darkTheme: DefaultTheme = {
   dullColor: "#343434",
   ternary: "#000000",
   codeColor: "#D121C5",
-  transparent: "rgba(107, 107, 107, 0.2)",
+  transparent: "rgba(80, 80, 80, 0.2)",
   violet: "#A771FE",
   lightblue: "#BDCCFF",
   mint: "#B5FBDD",
@@ -32,6 +32,15 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
   }
 
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
   a {
     color: inherit;
     text-decoration: none;
@@ -39,6 +48,7 @@ const GlobalStyle = createGlobalStyle`
 
   * {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
   }
 `;
 
