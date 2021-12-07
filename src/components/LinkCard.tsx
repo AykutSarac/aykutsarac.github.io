@@ -25,7 +25,6 @@ const StyledCard = styled.div<{ starCount?: number }>`
   height: 100%;
   width: 100%;
   border-radius: 5px;
-  -webkit-tap-highlight-color: transparent;
 
   &::before {
     position: absolute;
