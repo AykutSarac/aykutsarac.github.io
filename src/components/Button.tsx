@@ -6,7 +6,7 @@ interface ButtonProps {
   href?: string;
 }
 
-const StyledButton = styled.div`
+const StyledButton = styled.a`
   outline: none;
   border: none;
   border-radius: 5px;
@@ -34,12 +34,10 @@ const StyledButtonBody = styled.div`
 
 const Button: React.FC<ButtonProps> = ({ children, href }) => {
   return (
-    <Link href={href || "/"}>
-      <a target="_blank">
-        <StyledButton>
-          <StyledButtonBody>{children}</StyledButtonBody>
-        </StyledButton>
-      </a>
+    <Link href={href || "/"} passHref>
+      <StyledButton target="_blank">
+        <StyledButtonBody>{children}</StyledButtonBody>
+      </StyledButton>
     </Link>
   );
 };
