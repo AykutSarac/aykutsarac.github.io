@@ -8,3 +8,12 @@ language: node_js
  script:
  - npm lint
  - npm run build
+ deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: out
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  target_branch: gh-pages
+  keep_history: true
+  on:
+    branch: main
