@@ -6,7 +6,6 @@ interface IconCardProps {
 }
 
 const StyledCardText = styled.span<{ color: string }>`
-  // color: ${({ color }) => color};
   color: white;
   font-size: 18px;
   display: flex;
