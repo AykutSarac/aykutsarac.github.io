@@ -59,7 +59,7 @@ const StyledSubHeading = styled.h2`
     height: 30px;
     width: 100%;
     transform: translateY(100%);
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg");
+    background-image: url("underline.svg");
     background-repeat: no-repeat;
   }
 `;
