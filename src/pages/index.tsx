@@ -1,13 +1,16 @@
+import React from "react";
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
+import dynamic from "next/dynamic";
 import Container from "components/Container";
-import Header from "containers/Header";
-import Projects from "containers/Projects";
 import { BlogPost, filteredRepos, Repository } from "constants/types";
-import Blog from "containers/Blog";
-import Skills from "containers/Skills";
-import Contact from "containers/Contact";
 import styled from "styled-components";
+
+import Header from "containers/Header";
+const Blog = dynamic(() => import("containers/Blog"));
+const Projects = dynamic(() => import("containers/Projects"));
+const Skills = dynamic(() => import("containers/Skills"));
+const Contact = dynamic(() => import("containers/Contact"));
 
 interface Props {
   repos: Repository[];
