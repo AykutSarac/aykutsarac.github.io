@@ -28,7 +28,9 @@ const StyledContactItem = styled.a`
 const ContactItem: React.FC<ContactItemProps> = ({ children, href }) => {
   return (
     <Link href={href} passHref>
-      <StyledContactItem target="_blank">{children}</StyledContactItem>
+      <StyledContactItem target="_blank" rel="noopener">
+        {children}
+      </StyledContactItem>
     </Link>
   );
 };

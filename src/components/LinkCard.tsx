@@ -65,7 +65,7 @@ const StyledCardBody = styled.div`
 const LinkCard: React.FC<CardProps> = ({ repo }) => {
   return (
     <Link href={repo.html_url}>
-      <a target="_blank">
+      <a target="_blank" rel="noopener">
         <StyledCard starCount={repo.stargazers_count}>
           <StyledCardHeader starCount={repo.stargazers_count}>
             <StyledCardTitle>{repo.name}</StyledCardTitle>

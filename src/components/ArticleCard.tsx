@@ -36,7 +36,7 @@ const StyledArticleTitle = styled.h3`
 const ArticleCard: React.FC<ArticleCardProps> = ({ post }) => {
   return (
     <Link href={post.link} passHref>
-      <StyledArticleCard target="_blank">
+      <StyledArticleCard target="_blank" rel="noopener">
         <StyledArticleBody>
           <StyledArticleDate>
             {dayjs(post.pubDate).format("ll")}

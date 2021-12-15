@@ -35,7 +35,7 @@ const StyledButtonBody = styled.div`
 const Button: React.FC<ButtonProps> = ({ children, href }) => {
   return (
     <Link href={href || "/"} passHref>
-      <StyledButton target="_blank">
+      <StyledButton target="_blank" rel="noopener">
         <StyledButtonBody>{children}</StyledButtonBody>
       </StyledButton>
     </Link>
