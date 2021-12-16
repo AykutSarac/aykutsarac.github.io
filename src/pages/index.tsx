@@ -27,6 +27,10 @@ const Home: NextPage<Props> = ({ repos, blogPosts }) => {
       <Head>
         <title>Aykut Saraç</title>
         <meta
+          name="google-site-verification"
+          content="w5JtX4JtBGbvJ9327WgRKkHMQz47MHMMtltz3WNeJlg"
+        />
+        <meta
           name="description"
           content="I'm a passionate software developer who derives pleasure from solving problems, a self-learner with the ability to adapt new environments quickly and pleased in gaining new experiences while developing robust code for next-generation applications."
         />
