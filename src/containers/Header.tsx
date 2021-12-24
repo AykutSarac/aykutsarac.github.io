@@ -1,18 +1,7 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import Introduction from "./Introduction";
 import Contact from "./Contact";
-
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-
-  100% {
-    opacity: 1;
-  }
-`;
 
 const StyledHeader = styled.div`
   @media only screen and (min-width: 1024px) {
@@ -47,8 +36,6 @@ const StyledSubHeading = styled.h2`
   position: relative;
   color: ${({ theme }) => theme.mainColor};
   margin: 10px 0 0;
-  opacity: 0;
-  animation: ${fadeIn} 1.5s 0.5s forwards;
 
   ::before {
     position: absolute;
