@@ -1,13 +1,9 @@
 import Button from "components/Button";
 import LinkCard from "components/LinkCard";
 import Container from "components/Container";
-import { Repository } from "constants/types";
+import { filteredRepos, Repository } from "constants/types";
 import React from "react";
 import styled from "styled-components";
-
-interface ProjectsProps {
-  repos: Repository[];
-}
 
 const StyledContainer = styled(Container)`
   margin: 80px 0 20px;
@@ -44,7 +40,30 @@ const Growtopian: Repository = {
   name: "Growtopian",
 };
 
-const Projects: React.FC<ProjectsProps> = ({ repos }) => {
+const sortByStar = (a: Repository, b: Repository) => {
+  if (!a.stargazers_count || !b.stargazers_count) return 0;
+
+  if (a.stargazers_count > b.stargazers_count) return -1;
+  return 1;
+};
+
+const filterRepos = (repo: Repository) => {
+  if (!filteredRepos.includes(repo.id)) return repo;
+};
+
+async function getRepos() {
+  const res = await fetch("https://api.github.com/users/aykutsarac/repos");
+  const repos = await res.json();
+  return repos.sort(sortByStar).filter(filterRepos).slice(0, 5);
+}
+
+const Projects: React.FC = () => {
+  const [repos, setRepos] = React.useState<Repository[]>([]);
+
+  React.useEffect(() => {
+    getRepos().then((repos) => setRepos(repos));
+  }, []);
+
   return (
     <StyledContainer>
       <StyledHeading>Projects</StyledHeading>
