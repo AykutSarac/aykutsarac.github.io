@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
+  assetPrefix: "/",
   reactStrictMode: true,
-  trailingSlash: true
-}
+  trailingSlash: true,
+};
