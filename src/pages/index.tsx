@@ -1,15 +1,14 @@
 import React from "react";
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import Container from "components/Container";
 import styled from "styled-components";
 
 import Header from "containers/Header";
-const Blog = dynamic(() => import("containers/Blog"));
-const Projects = dynamic(() => import("containers/Projects"));
-const Skills = dynamic(() => import("containers/Skills"));
-const Contact = dynamic(() => import("containers/Contact"));
+import Blog from "containers/Blog";
+import Projects from "containers/Projects";
+import Skills from "containers/Skills";
+import Contact from "containers/Contact";
 
 const StyledContainer = styled(Container)`
   padding: 60px 0 0;
