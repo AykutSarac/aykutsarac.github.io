@@ -1,5 +1,5 @@
 import React from "react";
-import type { GetStaticProps, NextPage } from "next";
+import type { NextPage } from "next";
 import Head from "next/head";
 import Container from "components/Container";
 import styled from "styled-components";
