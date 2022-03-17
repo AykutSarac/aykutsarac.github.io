@@ -1,6 +1,6 @@
-import Button from "components/Button";
-import LinkCard from "components/LinkCard";
-import Container from "components/Container";
+import { Button } from "components/Button";
+import { Container } from "components/Container";
+import { LinkCard } from "components/LinkCard";
 import { filteredRepos, Repository } from "constants/types";
 import React from "react";
 import styled from "styled-components";

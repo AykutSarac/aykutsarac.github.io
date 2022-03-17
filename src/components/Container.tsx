@@ -11,8 +11,6 @@ const StyledContainer = styled.div`
   padding: 16px 0;
 `;
 
-const Container: React.FC<ContainerProps> = ({ children, className }) => {
+export const Container: React.FC<ContainerProps> = ({ children, className }) => {
   return <StyledContainer className={className}>{children}</StyledContainer>;
 };
-
-export default Container;

@@ -35,12 +35,10 @@ const StyledIconCard = styled.div<{ color: string }>`
   padding: 16px;
 `;
 
-const IconCard: React.FC<IconCardProps> = ({ color, children }) => {
+export const IconCard: React.FC<IconCardProps> = ({ color, children }) => {
   return (
     <StyledIconCard color={color}>
       <StyledCardText color={color}>{children}</StyledCardText>
     </StyledIconCard>
   );
 };
-
-export default IconCard;

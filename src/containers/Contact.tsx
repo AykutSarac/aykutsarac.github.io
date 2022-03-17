@@ -1,4 +1,4 @@
-import Container from "components/Container";
+import { Container } from "components/Container";
 import React from "react";
 import styled from "styled-components";
 import ContactItems from "./ContactItems";

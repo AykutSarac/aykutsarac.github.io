@@ -62,7 +62,7 @@ const StyledCardBody = styled.div`
   flex: 1;
 `;
 
-const LinkCard: React.FC<CardProps> = ({ repo }) => {
+export const LinkCard: React.FC<CardProps> = ({ repo }) => {
   return (
     <Link href={repo.html_url}>
       <a target="_blank" rel="noopener">
@@ -79,5 +79,3 @@ const LinkCard: React.FC<CardProps> = ({ repo }) => {
     </Link>
   );
 };
-
-export default LinkCard;

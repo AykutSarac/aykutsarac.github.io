@@ -1,7 +1,6 @@
 import React from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Container from "components/Container";
 import styled from "styled-components";
 
 import Header from "containers/Header";
@@ -9,6 +8,7 @@ import Blog from "containers/Blog";
 import Projects from "containers/Projects";
 import Skills from "containers/Skills";
 import Contact from "containers/Contact";
+import { Container } from "components/Container";
 
 const StyledContainer = styled(Container)`
   padding: 60px 0 0;

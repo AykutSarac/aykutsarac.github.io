@@ -1,9 +1,9 @@
-import Container from "components/Container";
-import IconCard from "components/IconCard";
 import React from "react";
 import styled from "styled-components";
 import { FaJs, FaVuejs, FaGitAlt, FaNodeJs, FaReact, FaSass } from "react-icons/fa";
 import { SiTypescript, SiMongodb } from "react-icons/si";
+import { Container } from "components/Container";
+import { IconCard } from "components/IconCard";
 
 const StyledContainer = styled(Container)`
   display: flex;

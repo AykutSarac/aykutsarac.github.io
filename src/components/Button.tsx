@@ -32,7 +32,7 @@ const StyledButtonBody = styled.div`
   align-items: center;
 `;
 
-const Button: React.FC<ButtonProps> = ({ children, href }) => {
+export const Button: React.FC<ButtonProps> = ({ children, href }) => {
   return (
     <Link href={href || "/"} passHref>
       <StyledButton target="_blank" rel="noopener">
@@ -41,5 +41,3 @@ const Button: React.FC<ButtonProps> = ({ children, href }) => {
     </Link>
   );
 };
-
-export default Button;

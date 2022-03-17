@@ -33,7 +33,7 @@ const StyledArticleTitle = styled.h3`
   margin-top: 0;
 `;
 
-const ArticleCard: React.FC<ArticleCardProps> = ({ post }) => {
+export const ArticleCard: React.FC<ArticleCardProps> = ({ post }) => {
   return (
     <Link href={post.link} passHref>
       <StyledArticleCard target="_blank" rel="noopener">
@@ -47,5 +47,3 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ post }) => {
     </Link>
   );
 };
-
-export default ArticleCard;

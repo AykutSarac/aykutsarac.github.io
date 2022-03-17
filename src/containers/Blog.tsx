@@ -1,6 +1,6 @@
-import ArticleCard from "components/ArticleCard";
-import Button from "components/Button";
-import Container from "components/Container";
+import { ArticleCard } from "components/ArticleCard";
+import { Button } from "components/Button";
+import { Container } from "components/Container";
 import { BlogPost } from "constants/types";
 import React from "react";
 import styled from "styled-components";
