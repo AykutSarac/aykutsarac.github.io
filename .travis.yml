@@ -7,7 +7,6 @@ branches:
 cache:
   directories:
     - node_modules
-    - .next
 script:
   - npm run build
 deploy:
