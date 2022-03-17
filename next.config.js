@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   basePath: "",
-  assetPrefix: "/",
+  assetPrefix: "https://aykutsarac.github.io",
   reactStrictMode: true,
   trailingSlash: true,
 };
