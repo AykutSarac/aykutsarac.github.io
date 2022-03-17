@@ -19,7 +19,7 @@ export const darkTheme: DefaultTheme = {
   lightgreen: "#BEF761",
   yellow: "#FFF851",
   red: "#F6522E"
-};
+} as const;
 
 const GlobalStyle = createGlobalStyle`
   html,
