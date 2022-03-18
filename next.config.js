@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
+  compiler: {
+    styledComponents: true,
+  },
   assetPrefix: "",
   reactStrictMode: true,
-  trailingSlash: true,
   experimental: {
     esmExternals: "loose"
   },
