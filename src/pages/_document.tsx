@@ -52,7 +52,13 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500&display=swap"
             rel="stylesheet"
           />
+          <link
+            rel="preload"
+            href="https://api.github.com/users/aykutsarac/repos"
+            as="fetch"
+          />
         </Head>
+
         <body>
           <Main />
           <NextScript />
