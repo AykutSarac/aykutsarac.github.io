@@ -104,7 +104,7 @@ const Header: React.FC = () => {
   return (
     <StyledHeader>
       <StyledImageWrapper>
-        <StyledImage src="/avatar.png" alt="aykut" />
+        <StyledImage src="/avatar.jpeg" alt="aykut" />
       </StyledImageWrapper>
       <StyledProfileSection>
         <StyledHeading>Hi, I&apos;m Aykut</StyledHeading>
