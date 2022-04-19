@@ -23,11 +23,15 @@ const StyledBlogWrapper = styled.div`
 `;
 
 async function getBlogPosts() {
-  const medium = await fetch(
-    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@aykutsarac"
-  );
-  const blogPosts = await medium.json();
-  return blogPosts.items.slice(0, 5);
+  try {
+    const medium = await fetch(
+      "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@aykutsarac"
+    );
+    const blogPosts = await medium.json();
+    return blogPosts.items.slice(0, 5);
+  } catch (error) {
+    console.error("Couldn't fetch blog posts.");
+  }
 }
 
 const Blog: React.FC = () => {
@@ -41,7 +45,7 @@ const Blog: React.FC = () => {
     <StyledContainer>
       <StyleHeading>Blog</StyleHeading>
       <StyledBlogWrapper>
-        {posts.map((post) => (
+        {posts?.map((post) => (
           <ArticleCard post={post} key={post.guid} />
         ))}
       </StyledBlogWrapper>

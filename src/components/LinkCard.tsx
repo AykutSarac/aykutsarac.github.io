@@ -8,8 +8,9 @@ interface CardProps {
 }
 
 function getStarCountColor(theme: DefaultTheme, starCount?: number) {
-  if (!starCount || starCount > 200) return theme.red;
-  if (starCount > 100) return theme.violet;
+  if (!starCount || starCount > 500) return theme.violet;
+  if (starCount > 220) return theme.red;
+  if (starCount > 100) return theme.lightblue;
   if (starCount > 50) return theme.lightgreen;
   if (starCount > 5) return theme.yellow;
   return theme.transparent;

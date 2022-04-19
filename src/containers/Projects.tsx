@@ -52,9 +52,13 @@ const filterRepos = (repo: Repository) => {
 };
 
 async function getRepos() {
-  const res = await fetch("https://api.github.com/users/aykutsarac/repos");
-  const repos = await res.json();
-  return repos.sort(sortByStar).filter(filterRepos).slice(0, 5);
+  try {
+    const res = await fetch("https://api.github.com/users/aykutsarac/repos");
+    const repos = await res.json();
+    return repos.sort(sortByStar).filter(filterRepos).slice(0, 5);
+  } catch (error) {
+    console.error("Couldn't fetch repos.");
+  }
 }
 
 const Projects: React.FC = () => {
@@ -69,7 +73,7 @@ const Projects: React.FC = () => {
       <StyledHeading>Projects</StyledHeading>
       <StyledCardsWrapper>
         <LinkCard repo={Growtopian} />
-        {repos.map((data) => (
+        {repos?.map((data) => (
           <LinkCard repo={data} key={data.id} />
         ))}
       </StyledCardsWrapper>

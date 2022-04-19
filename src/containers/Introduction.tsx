@@ -3,16 +3,24 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledContainer = styled(Container)`
-  text-align: center;
   margin-top: 50px;
   opacity: 1;
   transition: opacity 1s;
   padding: 32px;
+  line-height: 1.6;
+  text-align: center;
+  margin: 20px auto;
 
-  @media only screen and (min-width: 768px) {
-    grid-area: c;
+  @media only screen and (min-width: 720px) {
     width: 75%;
-    margin: 0 auto;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    text-align: initial;
+    grid-area: c;
+    width: 90%;
+    margin: 0;
+    letter-spacing: 1px;
   }
 `;
 

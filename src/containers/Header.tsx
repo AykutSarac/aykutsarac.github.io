@@ -10,9 +10,9 @@ const StyledHeader = styled.div`
       "a b"
       "c d";
     grid-template-rows: 1fr;
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: 3fr 2fr;
     width: 75%;
-    margin: 80px auto 20px;
+    margin: 110px auto;
     padding: 0 32px;
   }
 `;
@@ -29,6 +29,10 @@ const StyledHeading = styled.h1`
     left: 0;
     transform: translate(1px, 1px);
     color: ${({ theme }) => theme.main};
+  }
+
+  @media only screen and (min-width: 1024px) {
+    font-size: 3rem;
   }
 `;
 
@@ -49,6 +53,10 @@ const StyledSubHeading = styled.h2`
     background-image: url("underline.svg");
     background-repeat: no-repeat;
   }
+
+  @media only screen and (min-width: 1024px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const StyledImageWrapper = styled.div`
@@ -56,11 +64,12 @@ const StyledImageWrapper = styled.div`
   margin: 30px auto;
   width: 120px;
   height: 120px;
+  filter: drop-shadow(0 0 10px ${({ theme }) => theme.violet});
 
   @media only screen and (min-width: 768px) {
     grid-area: b;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
   }
 `;
 
@@ -78,6 +87,11 @@ const StyledProfileSection = styled.div`
   align-items: center;
   text-align: center;
   flex-direction: column;
+  padding: 32px;
+
+  @media only screen and (min-width: 1024px) {
+    align-items: flex-start;
+  }
 `;
 
 const StyledContact = styled(Contact)`
