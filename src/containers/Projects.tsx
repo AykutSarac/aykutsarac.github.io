@@ -35,7 +35,7 @@ const StyledHeading = styled.h2``;
 const Growtopian: Repository = {
   id: 1,
   description:
-    "Growtopian is a discord bot serving over 2500 servers and 150,000 active users daily.",
+    "Growtopian is a discord bot serving over 3500 servers and 150,000 active users daily.",
   html_url: "https://growtopian.xyz",
   name: "Growtopian",
 };
