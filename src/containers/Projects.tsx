@@ -55,7 +55,7 @@ async function getRepos() {
   try {
     const res = await fetch("https://api.github.com/users/aykutsarac/repos");
     const repos = await res.json();
-    return repos.sort(sortByStar).filter(filterRepos).slice(0, 5);
+    return repos.sort(sortByStar).filter(filterRepos).slice(0, 3);
   } catch (error) {
     console.error("Couldn't fetch repos.");
   }
